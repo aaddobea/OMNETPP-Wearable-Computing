@@ -1,0 +1,18 @@
+** Initializing network
+
+Initializing module WoTNetwork, stage 0
+Initializing module WoTNetwork.wearable, stage 0
+INFO (wearable)WoTNetwork.wearable:wearable initial message
+INFO (wearable)WoTNetwork.wearable:wearable initial message complete
+Initializing module WoTNetwork.mobile, stage 0
+Initializing module WoTNetwork.server, stage 0
+** Event #1  t=0.548813502304  WoTNetwork.wearable (wearable, id=2)  on selfmsg wearer's health data (omnetpp::cMessage, id=5)
+
+INFO:Received message `wearer's health data', sending it out again
+** Event #2  t=0.548813502304  WoTNetwork.mobile (mobile, id=3)  on wearer's health data (omnetpp::cMessage, id=5)
+
+** Event #3  t=0.548813502304  WoTNetwork.server (server, id=4)  on wearer's health data (omnetpp::cMessage, id=5)
+
+<!> send()/sendDelayed(): Gate 'out' not connected -- in module (server) WoTNetwork.server (id=4), at t=0.548813502304s, event #3
+
+
